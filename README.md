@@ -1,6 +1,6 @@
 
 # FfmpegLib
-Basic library to include ffmpeg suport to your poject
+Basic library to include ffmpeg support to your project
 
 V0.1
 
