@@ -1,0 +1,12 @@
+#ifndef FFMPEGLIB_GLOBAL_H
+#define FFMPEGLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FFMPEGLIB_LIBRARY)
+#  define FFMPEGLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define FFMPEGLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FFMPEGLIB_GLOBAL_H
