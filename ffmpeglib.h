@@ -35,7 +35,7 @@ protected:
     int frameFinished;
     uint8_t *rawBuffer;
     int frameToMem(AVFrame * pFrame, int width, int height, unsigned char *buf_mem);
-        cv::Mat internalGetNextFrame(int inType, int& outType); //A
+        cv::Mat internalGetNextFrame(int inType, int& outType);
     void init();
 
 public:
@@ -44,10 +44,10 @@ public:
 
     int setup(std::string&);
     cv::Mat getNextFrame();
-    cv::Mat getNextFrame(int& type); //A
-    cv::Mat getNextIFrame();         //A
-    cv::Mat getNextPFrame();         //A
-    int getGopSize(); // A
+    cv::Mat getNextFrame(int& type);
+    cv::Mat getNextIFrame();
+    cv::Mat getNextPFrame();
+    int getGopSize();
     int getHeight();
     int getWidth();
     void clean();
